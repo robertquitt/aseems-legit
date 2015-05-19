@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>aseem's legit</title>
+
+        <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    </head>
+    <body>
+        <a href="/tears">
+            <img id="aseem" src="{{ url_for('static', filename = 'aseem.jpg') }}"
+                height="320" style="position:absolute;"></img>
+        </a>
+        <audio autoplay loop>
+            <source src="{{ url_for('static', filename = 'aseem.ogg') }}">
+            <source src="{{ url_for('static', filename = 'aseem.mp3') }}">
+        </audio>
+        <script src="{{ url_for('static', filename = 'aseem.js') }}"></script>
+    </body> 
+</html>
