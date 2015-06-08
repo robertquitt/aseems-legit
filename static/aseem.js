@@ -47,7 +47,7 @@ var titlePos = 0;
 var titleText = "aseem's legit ";
 var titleLen = titleText.length;
 function scrollTitle() {
-	document.title = titleText.subString(titlePos,titleLen) + titleText.subString(0,titlePos)
+	document.title = titleText.substring(titlePos,titleLen) + titleText.substring(0,titlePos)
 	titlePos += 1;
 	if (titlePos >= titleLen) {
 		titlePos = 0;
