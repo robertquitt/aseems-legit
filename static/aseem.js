@@ -43,7 +43,19 @@ function randomlyMoveElement(id) {
     move(id, position.left, position.top);
 }
 
+var titlePos = 0;
+var titleText = "aseem's legit ";
+var titleLen = titleText.length;
+function scrollTitle() {
+	document.title = titleText.subString(titlePos,titleLen) + titleText.subString(0,titlePos)
+	titlePos += 1;
+	if (titlePos >= titleLen) {
+		titlePos = 0;
+	}
+} 
+
 setInterval(function() {
     randomlySetColor();
     randomlyMoveElement('aseem');
+	scrollTitle();
 }, 220);
